@@ -22,7 +22,7 @@ jobs:
           set -euo pipefail
           git remote add source https://github.com/deepseek-ai/deepseek-harness.git
           git fetch --depth=1 source 8bd073392eef6f54e921a093b95076248eb08cbb
-          git read-tree --reset -u FETCH_HEAD
+          git checkout --detach FETCH_HEAD
           python3 - <<'PYTHON'
           import os, json, base64, zlib
           from pathlib import Path
