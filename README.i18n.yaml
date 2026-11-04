@@ -1,0 +1,19 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write README.md
+/super-ming-agent:
+  en: 8791516c0ec9c07e
+  zh: f9efa6e8b91dd1c8
+/super-ming-agent/names-and-responsibilities:
+  en: e94978c8d942cff9
+  zh: c1f111071e6e229f
+/super-ming-agent/run-from-source:
+  en: d965d165263e6334
+  zh: 85b8bbb13c0cef72
+/super-ming-agent/development:
+  en: eb8bdabc1d471f66
+  zh: edb8e0ff179260ef
+/super-ming-agent/attribution-and-license:
+  en: 596e8dcf91f2da48
+  zh: 0b635793ec9d7055
