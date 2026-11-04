@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="600" viewBox="0 0 980 600" role="img" aria-label="Super-agent 架构与明朝官制对应总图" font-family="Songti SC, SimSun, serif">
+  <rect width="980" height="600" fill="#F7F8F5"/>
+    <defs>
+      <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1E2226"/></marker>
+      <marker id="ahr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#B23A2E"/></marker>
+      <marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#A8841C"/></marker>
+    </defs>
+
+    <path d="M150 140 L150 196" stroke="#1E2226" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+    <path d="M232 236 L382 236" stroke="#1E2226" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+    <text x="268" y="226" font-size="12" fill="#5A615F">新事件（Slow Path）</text>
+    <path d="M490 196 L490 138" stroke="#1E2226" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+    <path d="M520 138 L520 196" stroke="#B23A2E" stroke-width="1.6" fill="none" marker-end="url(#ahr)"/>
+    <text x="530" y="172" font-size="12" fill="#B23A2E">批红 / 验收</text>
+    <text x="378" y="172" font-size="12" fill="#5A615F">票拟草稿进呈</text>
+    <path d="M505 278 L505 372" stroke="#1E2226" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+    <text x="512" y="330" font-size="12" fill="#5A615F">分派任务</text>
+    <path d="M150 278 C150 340 220 372 250 386" stroke="#B23A2E" stroke-width="2" stroke-dasharray="6 4" fill="none" marker-end="url(#ahr)"/>
+    <text x="14" y="330" font-size="12" fill="#B23A2E">已订阅：直通 Worker</text>
+    <text x="14" y="346" font-size="12" fill="#B23A2E">（Fast Path · 部院照例）</text>
+    <path d="M840 196 C780 160 680 200 628 222" stroke="#A8841C" stroke-width="1.8" stroke-dasharray="3 4" fill="none" marker-end="url(#ahg)"/>
+    <path d="M840 300 C820 360 790 380 770 392" stroke="#A8841C" stroke-width="1.8" stroke-dasharray="3 4" fill="none" marker-end="url(#ahg)"/>
+    <text x="800" y="352" font-size="12" fill="#A8841C">定时稽查进度</text>
+    <path d="M330 480 L330 512" stroke="#1E2226" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+    <path d="M680 480 L680 512" stroke="#1E2226" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+
+    <g>
+      <rect x="400" y="40" width="210" height="96" rx="6" fill="#F7F8F5" stroke="#A8841C" stroke-width="1.8"/>
+      <text x="505" y="78" text-anchor="middle" font-size="24" font-weight="900" fill="#1E2226">皇帝</text>
+      <text x="505" y="104" text-anchor="middle" font-size="13" fill="#22507A" font-family="'SFMono-Regular', 'Songti SC', Consolas, monospace">用户 · 决策与验收</text>
+      <text x="505" y="124" text-anchor="middle" font-size="11.5" fill="#5A615F">只看结论，只做裁决</text>
+    </g>
+
+    <g>
+      <rect x="40" y="40" width="220" height="96" rx="6" fill="#E1E7E1" stroke="#C5CBC3"/>
+      <text x="150" y="74" text-anchor="middle" font-size="18" font-weight="900" fill="#1E2226">奏疏 · 塘报 · 民词</text>
+      <text x="150" y="98" text-anchor="middle" font-size="12.5" fill="#22507A" font-family="'SFMono-Regular', 'Songti SC', Consolas, monospace">Trigger：IM / 邮件 / PR / CI</text>
+      <text x="150" y="120" text-anchor="middle" font-size="11.5" fill="#5A615F">高噪音、低触发率</text>
+    </g>
+
+    <g>
+      <rect x="40" y="196" width="220" height="82" rx="6" fill="#F7F8F5" stroke="#1E2226" stroke-width="1.4"/>
+      <text x="150" y="228" text-anchor="middle" font-size="19" font-weight="900" fill="#1E2226">通政使司</text>
+      <text x="150" y="252" text-anchor="middle" font-size="12.5" fill="#22507A" font-family="'SFMono-Regular', 'Songti SC', Consolas, monospace">事件过滤 · 程序层</text>
+      <text x="150" y="270" text-anchor="middle" font-size="11.5" fill="#5A615F">违式者驳回，不入内阁</text>
+    </g>
+
+    <g>
+      <rect x="385" y="196" width="240" height="82" rx="6" fill="#F7F8F5" stroke="#B23A2E" stroke-width="2"/>
+      <text x="505" y="228" text-anchor="middle" font-size="22" font-weight="900" fill="#B23A2E">内阁</text>
+      <text x="505" y="252" text-anchor="middle" font-size="12.5" fill="#22507A" font-family="'SFMono-Regular', 'Songti SC', Consolas, monospace">Router 层 · 常驻 · 轻量模型</text>
+      <text x="505" y="270" text-anchor="middle" font-size="11.5" fill="#5A615F">票拟、分派、全局记忆</text>
+    </g>
+
+    <g>
+      <rect x="780" y="196" width="170" height="104" rx="6" fill="#F7F8F5" stroke="#A8841C" stroke-width="1.8" stroke-dasharray="6 3"/>
+      <text x="865" y="228" text-anchor="middle" font-size="19" font-weight="900" fill="#1E2226">都察院 · 六科</text>
+      <text x="865" y="252" text-anchor="middle" font-size="12.5" fill="#22507A" font-family="'SFMono-Regular', 'Songti SC', Consolas, monospace">Watchdog</text>
+      <text x="865" y="272" text-anchor="middle" font-size="11.5" fill="#5A615F">体系外的控制回路</text>
+      <text x="865" y="290" text-anchor="middle" font-size="11.5" fill="#5A615F">考成法 · 按期稽查</text>
+    </g>
+
+    <g>
+      <rect x="230" y="372" width="550" height="108" rx="6" fill="#E1E7E1" stroke="#1E2226" stroke-width="1.4"/>
+      <text x="505" y="398" text-anchor="middle" font-size="19" font-weight="900" fill="#1E2226">六部 · Worker 层（上下文隔离、各管一案、最强模型）</text>
+      <g font-size="15" font-weight="900" fill="#1E2226" text-anchor="middle">
+        <rect x="250" y="412" width="74" height="54" rx="4" fill="#F7F8F5" stroke="#C5CBC3"/><text x="287" y="436">吏部</text>
+        <rect x="336" y="412" width="74" height="54" rx="4" fill="#F7F8F5" stroke="#C5CBC3"/><text x="373" y="436">户部</text>
+        <rect x="422" y="412" width="74" height="54" rx="4" fill="#F7F8F5" stroke="#C5CBC3"/><text x="459" y="436">礼部</text>
+        <rect x="508" y="412" width="74" height="54" rx="4" fill="#F7F8F5" stroke="#C5CBC3"/><text x="545" y="436">兵部</text>
+        <rect x="594" y="412" width="74" height="54" rx="4" fill="#F7F8F5" stroke="#C5CBC3"/><text x="631" y="436">刑部</text>
+        <rect x="680" y="412" width="74" height="54" rx="4" fill="#F7F8F5" stroke="#C5CBC3"/><text x="717" y="436">工部</text>
+      </g>
+      <g font-size="10.5" fill="#22507A" text-anchor="middle" font-family="'SFMono-Regular', 'Songti SC', Consolas, monospace">
+        <text x="287" y="456">Worker</text><text x="373" y="456">Worker</text><text x="459" y="456">Worker</text><text x="545" y="456">Worker</text><text x="631" y="456">Worker</text><text x="717" y="456">Worker</text>
+      </g>
+    </g>
+
+    <g>
+      <rect x="200" y="512" width="260" height="72" rx="6" fill="#F7F8F5" stroke="#C5CBC3"/>
+      <text x="330" y="542" text-anchor="middle" font-size="17" font-weight="900" fill="#1E2226">后湖黄册库 · 档案</text>
+      <text x="330" y="566" text-anchor="middle" font-size="12" fill="#22507A" font-family="'SFMono-Regular', 'Songti SC', Consolas, monospace">持久化状态（数据库）</text>
+    </g>
+
+    <g>
+      <rect x="550" y="512" width="260" height="72" rx="6" fill="#F7F8F5" stroke="#C5CBC3"/>
+      <text x="680" y="542" text-anchor="middle" font-size="17" font-weight="900" fill="#1E2226">驿传 → 府州县</text>
+      <text x="680" y="566" text-anchor="middle" font-size="12" fill="#22507A" font-family="'SFMono-Regular', 'Songti SC', Consolas, monospace">端侧 daemon · 执行环境</text>
+    </g>
+  </svg>

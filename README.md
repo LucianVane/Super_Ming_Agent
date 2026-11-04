@@ -4,9 +4,13 @@ English | [中文](README.zh.md)
 
 **One agent, one imperial court.** Super Ming Agent (大明智能体) is a personal fork of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness), using Ming government offices as a guide to agent responsibilities. It keeps the upstream Cordis-based, everything-is-a-plugin architecture.
 
-The naming is inspired by [Super-agent 大明官制图](https://claude.ai/artifact/YG6q1qa8643zrNRxXMuMVx). The aim is to let people focus on decisions and acceptance while agents organize context, execute tasks, and report useful results.
+The aim is to let people focus on decisions and acceptance while agents organize context, execute tasks, and report useful results.
 
 ## Names and responsibilities
+
+![Super Ming Agent architecture overview](docs/images/ming-agent-overview.svg)
+
+Solid lines: standard flow. Red dashed line: direct delivery to subscribed workers. Gold dotted lines: independent supervision.
 
 These names explain the design; they do not introduce new runtime APIs or guarantee that every mechanism in the reference is implemented. This repository contains the harness. The separate [upstream Super-agent prototype](https://github.com/deepseek-ai/dsh-superagent-prototype) supplies repository-oriented orchestration and requires its own setup.
 
@@ -73,6 +77,6 @@ Report fork-specific issues in [this repository](https://github.com/LucianVane/S
 
 Super Ming Agent is maintained as a personal fork by LucianVane. DeepSeek Harness was developed by DeepSeek AI and is powered by [Cordis](https://github.com/cordiverse/cordis). The project is independently named and is not an official DeepSeek distribution.
 
-The naming explanation is adapted from the linked Claude artifact; its discussion refers to DeepSeek's [Exploring Super-agent Design](https://zhuanlan.zhihu.com/p/2099987320443237060). This README summarizes the design analogy without reproducing the article or its experimental claims.
+The design discussion draws on DeepSeek's [Exploring Super-agent Design](https://zhuanlan.zhihu.com/p/2099987320443237060). This README summarizes the design analogy without reproducing the article or its experimental claims.
 
 The upstream MIT license and third-party notices are preserved. See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

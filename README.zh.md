@@ -4,9 +4,13 @@
 
 **一个 Agent，一座紫禁城。** Super Ming Agent（大明智能体）是 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 的个人分支，用大明官制说明 agent（智能体）的职责分工，沿用上游基于 Cordis 的“一切皆插件”架构。
 
-命名参考 [Super-agent 大明官制图](https://claude.ai/artifact/YG6q1qa8643zrNRxXMuMVx)。目标是让人专注于决策与验收，由智能体整理上下文、执行任务并交付有用的结果。
+目标是让人专注于决策与验收，由智能体整理上下文、执行任务并交付有用的结果。
 
 ## 名称与职责
+
+![Super Ming Agent 架构总览](docs/images/ming-agent-overview.svg)
+
+实线表示常规流程；红色虚线表示订阅直通；金色点线表示独立监察回路。
 
 下列名称用于解释设计，不会引入新的运行时 API，也不代表参考资料中的每项机制都已实现。本仓库包含智能体框架；面向代码仓库的编排来自独立的[上游 Super-agent 原型](https://github.com/deepseek-ai/dsh-superagent-prototype)，需要单独配置。
 
@@ -73,6 +77,6 @@ pnpm run typecheck
 
 Super Ming Agent 由 LucianVane 作为个人分支维护。DeepSeek Harness 由 DeepSeek AI 开发，基于 [Cordis](https://github.com/cordiverse/cordis)。本项目采用独立名称，不是 DeepSeek 官方发行版。
 
-命名说明改编自所链接的 Claude Artifact；其中讨论的是 DeepSeek 的 [Super-agent 设计探索](https://zhuanlan.zhihu.com/p/2099987320443237060)。本 README 概括其设计类比，不复刻文章全文或实验结论。
+设计讨论参考 DeepSeek 的 [Super-agent 设计探索](https://zhuanlan.zhihu.com/p/2099987320443237060)。本 README 概括其设计类比，不复刻文章全文或实验结论。
 
 保留上游 MIT 许可证及第三方声明。详见 [LICENSE](LICENSE) 和 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

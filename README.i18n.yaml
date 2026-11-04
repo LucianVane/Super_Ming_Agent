@@ -3,11 +3,11 @@
 # After editing either side, bring the other along and re-record with:
 #   pnpm run verify-translation-pairing --write README.md
 /super-ming-agent:
-  en: 8791516c0ec9c07e
-  zh: f9efa6e8b91dd1c8
+  en: c0267b67c0564719
+  zh: 7a8175b2576e943b
 /super-ming-agent/names-and-responsibilities:
-  en: e94978c8d942cff9
-  zh: c1f111071e6e229f
+  en: 5325bf74ebad10d7
+  zh: df36647d8922e2b9
 /super-ming-agent/run-from-source:
   en: d965d165263e6334
   zh: 85b8bbb13c0cef72
@@ -15,5 +15,5 @@
   en: eb8bdabc1d471f66
   zh: edb8e0ff179260ef
 /super-ming-agent/attribution-and-license:
-  en: 596e8dcf91f2da48
-  zh: 0b635793ec9d7055
+  en: ae026b2f89c0f4f0
+  zh: e34ca50bd9cde578
